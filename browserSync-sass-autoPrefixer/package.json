@@ -1,0 +1,29 @@
+{
+  "name": "browserSync-autoPrefixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --config bs-config.js",
+    "postcss": "postcss style.css --use autoprefixer -o style.min.css -w",
+    "scss": "node-sass style.scss style.css --source-map-embed -w",
+    "styles": "npm run scss & npm run postcss",
+    "postcss:prod": "postcss style.css --use autoprefixer -o style.min.css --no-map",
+    "scss:prod": "node-sass style.scss style.css --output-style compressed",
+    "styles:prod": "npm run scss:prod & npm run postcss:prod",
+    "start": "npm run server & npm run styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

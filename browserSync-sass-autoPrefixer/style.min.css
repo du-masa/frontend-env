@@ -1,0 +1,13 @@
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    color: #8cc63f;
+    border-bottom: 1px solid #8cc63f;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: red; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSxXQUFVO0VBQ1YsVUFBUyxFQVNWO0VBWEQ7SUFLRSxlQVBrQjtJQVFoQixpQ0FSZ0I7SUFTaEIsOEJBQXFCO1lBQXJCLHNCQUFxQjtJQUNyQixxQkFBYTtJQUFiLHFCQUFhO0lBQWIsY0FBYTtJQUNiLFdBQVUsRUFDWiIsImZpbGUiOiJzdHlsZS5taW4uY3NzIn0= */

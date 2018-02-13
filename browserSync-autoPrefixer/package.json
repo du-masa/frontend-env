@@ -1,0 +1,22 @@
+{
+  "name": "browserSync-autoPrefixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --config bs-config.js",
+    "postcss": "postcss style.css --use autoprefixer -o style.build.css -w --no-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "postcss-cli": "^5.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
