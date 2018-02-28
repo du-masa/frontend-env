@@ -1,4 +1,6 @@
-$list-color: #8cc63f;
+$list-color: gray;
+
+@import 'btn';
 
 ul {
   padding: 0;
@@ -7,8 +9,8 @@ ul {
 	li {
 		color: $list-color;
     border-bottom: 1px solid $list-color;
-    transform: scale(0.5);
+    transform: scale(0.9);
     display: flex;
-    color: red;
+    color: #E90974;
 	}
 }

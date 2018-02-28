@@ -1,0 +1,30 @@
+{
+  "name": "browserSync-browserify-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --config bs-config.js",
+    "browserify": "browserify main.js -d -o main.bundle.js",
+    "watchify": "watchify main.js -v -d -o main.bundle.js",
+    "babel": "babel main.bundle.js -o main.bundle.compiled.js --source-maps inline",
+    "babel:watch": "babel main.bundle.js -w -o main.bundle.compiled.js --source-maps inline",
+    "watch": "npm run watchify & npm run babel:watch",
+    "minify": "babel main.bundle.js --compact=true -o main.bundle.compiled.js",
+    "build": "npm run browserify && npm run minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.1.0",
+    "uglifyify": "^4.0.5",
+    "watchify": "^3.10.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

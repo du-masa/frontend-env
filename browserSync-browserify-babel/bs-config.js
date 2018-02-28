@@ -16,7 +16,7 @@ module.exports = {
     "ui": {
         "port": 3001
     },
-    "files": "**/*",
+    "files": ["style.min.css", "index.html"],
     "watchEvents": [
         "change"
     ],
