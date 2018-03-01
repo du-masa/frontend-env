@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
@@ -70,7 +71,7 @@ module.exports = {
     new ExtractTextPlugin('./css/[name].css'),
     ...(
       PRODUCTION ? [
-        new webpack.optimize.UglifyJsPlugin()
+        new UglifyJsPlugin()
       ] : []
     ),
   ]
