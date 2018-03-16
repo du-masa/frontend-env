@@ -1,7 +1,8 @@
 .DS_STORE
 /.vscode
 */node_modules
-*/public
+*/public/js/
+*/public/css/
 
 style.css
 style.min.css
