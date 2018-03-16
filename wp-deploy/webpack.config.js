@@ -45,7 +45,7 @@ module.exports = {
               loader: 'postcss-loader',
               options: {
                 plugins: () => [
-                  require('autoprefixer')({ browsers: ['last 2 versions', 'android 4', 'ios 6'] }),
+                  require('autoprefixer')({ browsers: ['last 2 versions'] }),
                 ],
                 sourceMap: !PRODUCTION
               },
