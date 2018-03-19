@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'din';
+  src: url('../fonts/DIN Alternate Bold.ttf');
+  font-display: swap;
+}
+
+body {
+  background: black; }
+
+div {
+  display: flex;
+  background-image: url('../images/00013594_72B.jpg');
+  font-family: 'din';
+}
